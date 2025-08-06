@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ALS İletişim Uygulaması</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f8;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+    }
+    .content-pair {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .box {
+      flex: 1;
+      min-width: 300px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    pre {
+      background: #ecf0f1;
+      padding: 15px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #bdc3c7;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ALS Hastaları İçin Göz Takipli İletişim Uygulaması</h1>
+</header>
+
+<section>
+  <h2>Problem Tanımı</h2>
+  <div class="content-pair">
+    <div class="box">
+      <strong>TR:</strong><br>
+      ALS hastalarının göz hareketleriyle iletişim kurmalarını sağlayan teknolojiler mevcut olsa da, yüksek maliyetleri nedeniyle erişilebilirlikleri oldukça sınırlıdır. Geliştirdiğimiz uygulamayla ise bu engeli aşarak, ALS hastalarına düşük maliyetli ve erişilebilir bir iletişim imkânı sunuyoruz. Tobii Dynavox ve E-tran board, mevcut çözümlere örnek olarak gösterilebilir.
+    </div>
+    <div class="box">
+      <strong>EN:</strong><br>
+      There are technologies that help ALS patients communicate using eye movements, but they’re too expensive and hard to access. Our app offers a simple and affordable way for ALS patients to communicate. Tobii Dynavox and E-tran board are examples of current solutions.
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Yöntem: Arkaplan</h2>
+  <div class="content-pair">
+    <div class="box">
+      <strong>TR:</strong><br>
+      Java diliyle geliştirdiğimiz uygulamamız, OpenCV kütüphanesi ile göz ve yüz tanıma işlemlerini gerçekleştirmektedir. Gözü OpenCV ile algıladıktan sonra kontrast artırımıyla göz bebeği tespit edilir; göz bebeğinin merkezi, kalibrasyon verileriyle karşılaştırılarak bakış yönü belirlenir. Bakış yönüyle ise hastanın uygulamayı kontrol etmesi sağlanmaktadır.
+    </div>
+    <div class="box">
+      <strong>EN:</strong><br>
+      Our app, developed in Java, uses the OpenCV library to detect eyes and faces. After detecting the eye with OpenCV, we apply contrast enhancement to locate the pupil. Then the center of the pupil is compared with calibration data to determine the gaze direction. This gaze direction allows the patient to control the app.
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Yöntem: Önplan</h2>
+  <div class="content-pair">
+    <div class="box">
+      <strong>TR:</strong><br>
+      (Ekran yansıtılacak ve örnek kelime "su" yazılacak.) Şimdi uygulamanın nasıl çalıştığını bir örnekle gösterelim. Günlük hayatta çok kullandığımız ve kısa olan bir kelime olan "su" kelimesiyle bir yazı yazacağım. Şuan sunumda olduğumuz için tuşlara elim ile tıklayacağım fakat zaten benim şuan yaptığım işlemler göz ile yapılabiliyor. Biraz hızlı davranmak içim böyle yapıyorum.
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Özgünlük</h2>
+  <div class="content-pair">
+    <div class="box">
+      <strong>TR:</strong><br>
+      İzninizle uygulamanın kodlarını size göstermek istiyorum. Gördüğünüz gibi kodlamaların hepsi bizim tarafımızdan yazılmış olup ürün tamamen bize aittir.
+    </div>
+    <div class="box">
+      <strong>EN:</strong><br>
+      With your permission, we’d like to show you the code of our application. As you can see, all the programming has been done by us, and the product is entirely our own.
+    </div>
+  </div>
+  <pre>
+// Java + OpenCV kod örneği buraya eklenebilir
+// public void detectPupil(...) { ... }
+  </pre>
+</section>
+
+<section>
+  <h2>Fırsatlar ve Tehditler</h2>
+  <div class="content-pair">
+    <div class="box">
+      <strong>TR:</strong><br>
+      Farklı yapay zeka modelleri entegre ederek uygulamanın hem performansını hem de işlev çeşitliliğini artıracağız. Ardından uygulamayı Play Store ve App Store gibi platformlarda yayımlayarak hastaların erişimini sağlayacağız. Ayrıca uygulamayı açık kaynak kodlu bir şekilde yayınlayarak geliştirmeye açık hale getiriceğiz.<br><br>
+      Tabii uygulamanın bazı sınırlamaları da bulunmaktadır. Özellikle ani ışık değişimleri veya gözlük kullanımı, sistemin algılama performansını olumsuz etkileyebilir. Ayrıca düşük donanımlı cihazlarda uygulamanın işlem performansı sınırlı kalabilir.
+    </div>
+    <div class="box">
+      <strong>EN:</strong><br>
+      We're going to improve the app by adding different AI models to make it faster and more useful. Then we'll publish it on the Play Store and App Store so patients can easily reach it. We'll also make it open-source, so other developers can help make it even better.<br><br>
+      Of course, the application has some limitations. In particular, sudden changes in lighting or the use of glasses can negatively affect the system's detection performance. In addition, the application's processing performance may be limited on low-end devices.
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 ALS Communication App | ISEF Presentation
+</footer>
+
+</body>
+</html>
