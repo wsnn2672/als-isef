@@ -54,7 +54,7 @@
 
     #sinan {
       border-radius: 0px 0px 10px 0px;
-      color: #d8d8d8;
+      color: #91a1dd;
     }
 
     @media (max-width: 600px) {
@@ -68,7 +68,6 @@
         text-align: center;
       }
     }
-
 
     section {
       padding: 40px 20px;
@@ -105,6 +104,68 @@
       background: #bdc3c7;
       font-size: 14px;
     }
+    .section-image {
+      display: none;
+    }
+
+    .checkbox-container {
+      text-align: center;
+      margin: 30px 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .custom-checkbox {
+      position: relative;
+      padding-left: 40px;
+      cursor: pointer;
+      font-size: 18px;
+      color: #333;
+      user-select: none;
+    }
+
+    .custom-checkbox input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 24px;
+      width: 24px;
+      background-color: #eee;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+      box-shadow: inset 0 0 0 2px #ccc;
+    }
+
+    .custom-checkbox:hover .checkmark {
+      background-color: #ddd;
+    }
+
+    .custom-checkbox input:checked ~ .checkmark {
+      background-color: #4CAF50;
+      box-shadow: inset 0 0 0 2px #4CAF50;
+    }
+
+    .checkmark::after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 8px;
+      top: 4px;
+      width: 6px;
+      height: 12px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+
+    .custom-checkbox input:checked ~ .checkmark::after {
+      display: block;
+    }
   </style>
 </head>
 <body>
@@ -119,22 +180,16 @@
   <a href="index.html" id="sinan">Sinan</a>
 </div>
 
-<section>
-  <h2>Diğer Teknolojilerden Farkımız:</h2>
-  <div class="content-pair">
-    <div class="box">
-      <strong>TR:</strong><br>
-      ALS hastalarının göz hareketleriyle iletişim kurmalarını sağlayan teknolojiler mevcut olsa da, yüksek maliyetleri nedeniyle erişilebilirlikleri oldukça sınırlıdır. Geliştirdiğimiz uygulamayla ise bu engeli aşarak, ALS hastalarına düşük maliyetli ve erişilebilir bir iletişim imkânı sunuyoruz. Tobii Dynavox ve E-tran board, mevcut çözümlere örnek olarak gösterilebilir.
-    </div>
-    <div class="box">
-      <strong>EN:</strong><br>
-      There are technologies that help ALS patients communicate using eye movements, but they’re too expensive and hard to access. Our app offers a simple and affordable way for ALS patients to communicate. Tobii Dynavox and E-tran board are examples of current solutions.
-    </div>
-  </div>
-</section>
+<div class="checkbox-container">
+  <label class="custom-checkbox">
+    <input type="checkbox" id="toggleImages">
+    <span class="checkmark"></span>
+    Görselleri Göster/Gizle
+  </label>
+</div>
 
 <section>
-  <h2>Göz İzleme Teknolojisi Nasıl Çalışıyor?</h2>
+  <h2>Eye Tracking Technology</h2>
   <div class="content-pair">
     <div class="box">
       <strong>TR:</strong><br>
@@ -145,10 +200,26 @@
       Our app, developed in Java, uses the OpenCV library to detect eyes and faces. After detecting the eye with OpenCV, we apply contrast enhancement to locate the pupil. Then the center of the pupil is compared with calibration data to determine the gaze direction. This gaze direction allows the patient to control the app.
     </div>
   </div>
+  <img src="images/index/gorsel1.png" alt="Farkımız görseli" style="width:100%; max-width:600px; display:block; margin:20px auto; border-radius:8px;" class="section-image">
 </section>
 
 <section>
-  <h2>Metin Girişi Sekmesi Nasıl Kullanılır?</h2>
+  <h2>What Makes Our Application Different</h2>
+  <div class="content-pair">
+    <div class="box">
+      <strong>TR:</strong><br>
+      ALS hastalarının göz hareketleriyle iletişim kurmalarını sağlayan teknolojiler mevcut olsa da, yüksek maliyetleri nedeniyle erişilebilirlikleri oldukça sınırlıdır. Geliştirdiğimiz uygulamayla ise bu engeli aşarak, ALS hastalarına düşük maliyetli ve erişilebilir bir iletişim imkânı sunuyoruz. Tobii Dynavox ve E-tran board, mevcut çözümlere örnek olarak gösterilebilir.
+    </div>
+    <div class="box">
+      <strong>EN:</strong><br>
+      There are technologies that help ALS patients communicate using eye movements, but they’re too expensive and hard to access. Our app offers a simple and affordable way for ALS patients to communicate. E-tran board and Tobii Dynavox are examples of current solutions.
+    </div>
+  </div>
+  <img src="images/index/gorsel2.png" alt="Farkımız görseli" style="width:100%; max-width:600px; display:block; margin:20px auto; border-radius:8px;" class="section-image">
+</section>
+
+<section>
+  <h2>Text Entry Tab</h2>
   <div class="content-pair">
     <div class="box">
       <strong>TR:</strong><br>
@@ -165,10 +236,11 @@ To type the word "car," you first need to enter the first letter, which is 'C'. 
 You may notice that the TextBox shows a strange combination that might not make sense at first. But if you press the Change button, the application starts guessing the word you're trying to write. Once you select the word, the AI writes a sentence in the LLM box. Then, the patient can speak the word by pressing the Complete and Speak button.
     </div>
   </div>
+  <img src="images/index/gorsel3.png" alt="Farkımız görseli" style="width:100%; max-width:600px; display:block; margin:20px auto; border-radius:8px;" class="section-image">
 </section>
 
 <section>
-  <h2>Hızlı Sohbet Sekmesi Nedir?</h2>
+  <h2>Quick Chat Tab</h2>
   <div class="content-pair">
     <div class="box">
       <strong>TR:</strong><br>
@@ -179,28 +251,11 @@ You may notice that the TextBox shows a strange combination that might not make 
       We created a Quick Chat Tab to help patients communicate faster without typing. It includes five categories like Basic Needs and Medical Needs, each filled with commonly used phrases. This allows patients to express themselves quickly and easily.
     </div>
   </div>
+  <img src="images/index/gorsel4.png" alt="Farkımız görseli" style="width:100%; max-width:600px; display:block; margin:20px auto; border-radius:8px;" class="section-image">
 </section>
 
 <section>
-  <h2>Özgünlük</h2>
-  <div class="content-pair">
-    <div class="box">
-      <strong>TR:</strong><br>
-      İzninizle uygulamanın kodlarını size göstermek istiyorum. Gördüğünüz gibi kodlamaların hepsi bizim tarafımızdan yazılmış olup ürün tamamen bize aittir.
-    </div>
-    <div class="box">
-      <strong>EN:</strong><br>
-      With your permission, we’d like to show you the code of our application. As you can see, all the programming has been done by us, and the product is entirely our own.
-    </div>
-  </div>
-  <pre>
-// Burada java kod ekranı açık olacak.
-// Android Studio
-  </pre>
-</section>
-
-<section>
-  <h2>Fırsatlar ve Tehditler</h2>
+  <h2>Opportunities and Threats</h2>
   <div class="content-pair">
     <div class="box">
       <strong>TR:</strong><br>
@@ -213,6 +268,7 @@ You may notice that the TextBox shows a strange combination that might not make 
       Of course, the application has some limitations. In particular, sudden changes in lighting or the use of glasses can negatively affect the system's detection performance. In addition, the application's processing performance may be limited on low-end devices.
     </div>
   </div>
+  <img src="images/index/gorsel5.png" alt="Farkımız görseli" style="width:100%; max-width:600px; display:block; margin:20px auto; border-radius:8px;" class="section-image">
 </section>
 
 <footer>
@@ -221,3 +277,17 @@ You may notice that the TextBox shows a strange combination that might not make 
 
 </body>
 </html>
+<script>
+  const images = document.querySelectorAll('.section-image');
+  images.forEach(img => {
+    img.style.display = 'none';
+  });
+
+  const checkbox = document.getElementById('toggleImages');
+  checkbox.addEventListener('change', function () {
+    const images = document.querySelectorAll('.section-image');
+    images.forEach(img => {
+      img.style.display = this.checked ? 'block' : 'none';
+    });
+  });
+</script>
