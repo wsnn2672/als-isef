@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ALS - ISEF Mülakat</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 30px 20px 10px;
+      text-align: center;
+      position: relative;
+    }
+
+    .profile-buttons {
+      margin-top: 0px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .profile-buttons a {
+      background: #2c3e50;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 0px;
+      font-weight: 600;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .profile-buttons a:hover {
+      background: #364a5f;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    }
+    #eren {
+      border-radius: 0px 0px 0px 10px;
+    }
+
+    #eyup {
+      border-radius: 0px 0px 0px 0px;
+    }
+
+    #sinan {
+      border-radius: 0px 0px 10px 0px;
+      color: #91a1dd;
+    }
+
+    @media (max-width: 600px) {
+      .profile-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .profile-buttons a {
+        width: 80%;
+        text-align: center;
+      }
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+    }
+    .content-pair {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .box {
+      flex: 1;
+      min-width: 300px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    pre {
+      background: #ecf0f1;
+      padding: 15px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #bdc3c7;
+      font-size: 14px;
+    }
+    .section-image {
+      display: none;
+    }
+
+    .checkbox-container {
+      text-align: center;
+      margin: 30px 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .custom-checkbox {
+      position: relative;
+      padding-left: 40px;
+      cursor: pointer;
+      font-size: 18px;
+      color: #333;
+      user-select: none;
+    }
+
+    .custom-checkbox input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 24px;
+      width: 24px;
+      background-color: #eee;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+      box-shadow: inset 0 0 0 2px #ccc;
+    }
+
+    .custom-checkbox:hover .checkmark {
+      background-color: #ddd;
+    }
+
+    .custom-checkbox input:checked ~ .checkmark {
+      background-color: #4CAF50;
+      box-shadow: inset 0 0 0 2px #4CAF50;
+    }
+
+    .checkmark::after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 8px;
+      top: 4px;
+      width: 6px;
+      height: 12px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+
+    .custom-checkbox input:checked ~ .checkmark::after {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Multilingual and Low-Cost Mobile Eye Movement Communication System for Patients with Amyotrophic Lateral Sclerosis (ALS)</h1>
+</header>
+
+<div class="profile-buttons">
+  <a href="eren.html" id="eren">Eren</a>
+  <a href="eyup.html" id="eyup">Eyüp</a>
+  <a href="index.html" id="sinan">Sinan</a>
+</div>
+
+<div class="checkbox-container">
+  <label class="custom-checkbox">
+    <input type="checkbox" id="toggleImages">
+    <span class="checkmark"></span>
+    Görselleri Göster/Gizle
+  </label>
+</div>
+
+<section>
+  <h2>Eye Tracking Technology</h2>
+  <div class="content-pair">
+    <div class="box">
+      <strong>TR:</strong><br>
+      Java diliyle geliştirdiğimiz uygulamamız, OpenCV kütüphanesi ile göz ve yüz tanıma işlemlerini gerçekleştirmektedir. Gözü OpenCV ile algıladıktan sonra kontrast artırımıyla göz bebeği tespit edilir; göz bebeğinin merkezi, kalibrasyon verileriyle karşılaştırılarak bakış yönü belirlenir. Bakış yönüyle ise hastanın uygulamayı kontrol etmesi sağlanmaktadır.
+    </div>
+    <div class="box">
+      <strong>EN:</strong><br>
+      Our app, developed in Java, uses the OpenCV library to detect eyes and faces. After detecting the eye with OpenCV, we apply contrast enhancement to locate the pupil. Then the center of the pupil is compared with calibration data to determine the gaze direction. This gaze direction allows the patient to control the app.
+    </div>
+  </div>
+  <img src="images/index/gorsel1.png" alt="Farkımız görseli" style="width:100%; max-width:600px; display:block; margin:20px auto; border-radius:8px;" class="section-image">
+</section>
+
+<section>
+  <h2>What Makes Our Application Different</h2>
+  <div class="content-pair">
+    <div class="box">
+      <strong>TR:</strong><br>
+      ALS hastalarının göz hareketleriyle iletişim kurmalarını sağlayan teknolojiler mevcut olsa da, yüksek maliyetleri nedeniyle erişilebilirlikleri oldukça sınırlıdır. Geliştirdiğimiz uygulamayla ise bu engeli aşarak, ALS hastalarına düşük maliyetli ve erişilebilir bir iletişim imkânı sunuyoruz. Tobii Dynavox ve E-tran board, mevcut çözümlere örnek olarak gösterilebilir.
+    </div>
+    <div class="box">
+      <strong>EN:</strong><br>
+      There are technologies that help ALS patients communicate using eye movements, but they’re too expensive and hard to access. Our app offers a simple and affordable way for ALS patients to communicate. E-tran board and Tobii Dynavox are examples of current solutions.
+    </div>
+  </div>
+  <img src="images/index/gorsel2.png" alt="Farkımız görseli" style="width:100%; max-width:600px; display:block; margin:20px auto; border-radius:8px;" class="section-image">
+</section>
+
+<section>
+  <h2>Text Entry Tab</h2>
+  <div class="content-pair">
+    <div class="box">
+      <strong>TR:</strong><br>
+      Arayüzde altı düğme bulunur: dördü yazmak için, ikisi ise girişi değiştirmek veya tamamlamak içindir. Kullanıcılar harfleri seçerek kombinasyonlar oluşturur, ardından “Değiştir” düğmesine basarak kelime önerilerini görüntüler. Hiçbiri uymazsa, AI alternatifler sunar. Bir kelime seçildiğinde, AI bir cümle oluşturur ve bu cümle “Tamamla” düğmesiyle seslendirilebilir.
+    </div>
+    <div class="box">
+      <strong>EN:</strong><br>
+      The interface has six buttons: four for typing, and two for changing or completing input. Users select letters to form combinations, then press “Change” to view word suggestions. If none of them matches, AI offers alternatives. Once a word is chosen, AI builds a sentence, which can be spoken with "Complete".
+    </div>
+    <div class="box">
+      <strong>EN (Daha Detaylı Açıklanmıış Hali):</strong><br>
+      As you can see, the Text Entry Interface has six interactive buttons: four of them are keyboard keys, and the remaining two are the Change and Delete buttons. Let me give you an example to help you understand. For instance, let's try the word "car."
+To type the word "car," you first need to enter the first letter, which is 'C'. To do that, look at the top-left box that contains the letter 'C'. After that, just like with the letter 'C', you need to look at the boxes that contain the remaining letters.
+You may notice that the TextBox shows a strange combination that might not make sense at first. But if you press the Change button, the application starts guessing the word you're trying to write. Once you select the word, the AI writes a sentence in the LLM box. Then, the patient can speak the word by pressing the Complete and Speak button.
+    </div>
+  </div>
+  <img src="images/index/gorsel3.png" alt="Farkımız görseli" style="width:100%; max-width:600px; display:block; margin:20px auto; border-radius:8px;" class="section-image">
+</section>
+
+<section>
+  <h2>Quick Chat Tab</h2>
+  <div class="content-pair">
+    <div class="box">
+      <strong>TR:</strong><br>
+      Hastaların yazmadan daha hızlı iletişim kurmalarına yardımcı olmak için Hızlı Sohbet Sekmesi oluşturduk. Bu sekme, Temel İhtiyaçlar ve Tıbbi İhtiyaçlar gibi beş kategoriyi içerir ve her biri sık kullanılan ifadelerle doludur. Bu sayede hastalar kendilerini hızlı ve kolay bir şekilde ifade edebilirler.
+    </div>
+    <div class="box">
+      <strong>EN:</strong><br>
+      We created a Quick Chat Tab to help patients communicate faster without typing. It includes five categories like Basic Needs and Medical Needs, each filled with commonly used phrases. This allows patients to express themselves quickly and easily.
+    </div>
+  </div>
+  <img src="images/index/gorsel4.png" alt="Farkımız görseli" style="width:100%; max-width:600px; display:block; margin:20px auto; border-radius:8px;" class="section-image">
+</section>
+
+<section>
+  <h2>Opportunities and Threats</h2>
+  <div class="content-pair">
+    <div class="box">
+      <strong>TR:</strong><br>
+      Farklı yapay zeka modelleri entegre ederek uygulamanın hem performansını hem de işlev çeşitliliğini artıracağız. Ardından uygulamayı Play Store ve App Store gibi platformlarda yayımlayarak hastaların erişimini sağlayacağız. Ayrıca uygulamayı açık kaynak kodlu bir şekilde yayınlayarak geliştirmeye açık hale getiriceğiz.<br><br>
+      Tabii uygulamanın bazı sınırlamaları da bulunmaktadır. Özellikle ani ışık değişimleri veya gözlük kullanımı, sistemin algılama performansını olumsuz etkileyebilir. Ayrıca düşük donanımlı cihazlarda uygulamanın işlem performansı sınırlı kalabilir.
+    </div>
+    <div class="box">
+      <strong>EN:</strong><br>
+      We're going to improve the app by adding different AI models to make it faster and more useful. Then we'll publish it on the Play Store and App Store so patients can easily reach it. We'll also make it open-source, so other developers can help make it even better.<br><br>
+      Of course, the application has some limitations. In particular, sudden changes in lighting or the use of glasses can negatively affect the system's detection performance. In addition, the application's processing performance may be limited on low-end devices.
+    </div>
+  </div>
+  <img src="images/index/gorsel5.png" alt="Farkımız görseli" style="width:100%; max-width:600px; display:block; margin:20px auto; border-radius:8px;" class="section-image">
+</section>
+
+<footer>
+  © 2025 ALS Communication App | ISEF Presentation
+</footer>
+
+</body>
+</html>
+<script>
+  const images = document.querySelectorAll('.section-image');
+  images.forEach(img => {
+    img.style.display = 'none';
+  });
+
+  const checkbox = document.getElementById('toggleImages');
+  checkbox.addEventListener('change', function () {
+    const images = document.querySelectorAll('.section-image');
+    images.forEach(img => {
+      img.style.display = this.checked ? 'block' : 'none';
+    });
+  });
+</script>

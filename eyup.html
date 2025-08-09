@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ALS - ISEF Mülakat</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 30px 20px 10px;
+      text-align: center;
+      position: relative;
+    }
+
+    .profile-buttons {
+      margin-top: 0px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .profile-buttons a {
+      background: #2c3e50;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 0px;
+      font-weight: 600;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .profile-buttons a:hover {
+      background: #364a5f;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    }
+    #eren {
+      border-radius: 0px 0px 0px 10px;
+    }
+
+    #eyup {
+      border-radius: 0px 0px 0px 0px;
+      color: #91a1dd;
+    }
+
+    #sinan {
+      border-radius: 0px 0px 10px 0px;
+    }
+
+    @media (max-width: 600px) {
+      .profile-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .profile-buttons a {
+        width: 80%;
+        text-align: center;
+      }
+    }
+
+    h4 {
+      color: #2c3e50;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+    }
+    .content-pair {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .box {
+      flex: 1;
+      min-width: 300px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    pre {
+      background: #ecf0f1;
+      padding: 15px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #bdc3c7;
+      font-size: 14px;
+    }
+    .checkbox-container {
+      text-align: center;
+      margin: 30px 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .custom-checkbox {
+      position: relative;
+      padding-left: 40px;
+      cursor: pointer;
+      font-size: 18px;
+      color: #333;
+      user-select: none;
+    }
+
+    .custom-checkbox input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 24px;
+      width: 24px;
+      background-color: #eee;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+      box-shadow: inset 0 0 0 2px #ccc;
+    }
+
+    .custom-checkbox:hover .checkmark {
+      background-color: #ddd;
+    }
+
+    .custom-checkbox input:checked ~ .checkmark {
+      background-color: #4CAF50;
+      box-shadow: inset 0 0 0 2px #4CAF50;
+    }
+
+    .checkmark::after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 8px;
+      top: 4px;
+      width: 6px;
+      height: 12px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+
+    .custom-checkbox input:checked ~ .checkmark::after {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Multilingual and Low-Cost Mobile Eye Movement Communication System for Patients with Amyotrophic Lateral Sclerosis (ALS)</h1>
+</header>
+
+<div class="profile-buttons">
+  <a href="eren.html" id="eren">Eren</a>
+  <a href="eyup.html" id="eyup">Eyüp</a>
+  <a href="index.html" id="sinan">Sinan</a>
+</div>
+
+<h4>Başlıklandırmalar yanlış olabilir - doğrusunu bana iletirseniz düzeltirim.</h4>
+
+<div class="checkbox-container">
+  <label class="custom-checkbox">
+    <input type="checkbox" id="toggleImages">
+    <span class="checkmark"></span>
+    Görselleri Göster/Gizle
+  </label>
+</div>
+
+<section>
+  <h2>Metin1:</h2>
+  <div class="content-pair">
+    <div class="box">
+      <strong>TR:</strong><br>
+      Görünürde hiçbir neden olmaksızın, beyninizin omuriliğindeki motor nöronlar yok olmaya başlar. Nedeni bilinmemektedir ve tedavisi yoktur. Zamanla hastalar nefes alamaz hale gelir, kendi tükürükleriyle boğulurlar ve bunun çözümü trakeostomidir. Yemek yiyemezler, bu nedenle mideye bir peg tüpü takılır. Zamanla hastalar tamamen felç olur ve sadece gözlerini kullanabilirler. Bu felç, normal felçten büyük bir farkı vardır. Hastalar hareket edemese de her şeyi hissedebilirler. Bu da hastalığı daha da dayanılmaz hale getirir. Hastalığın en kötü yanı iletişim kuramamaktır. İnsanların en temel hakkı olan iletişimden mahrum kalırlar.
+    </div>
+    <div class="box">
+      <strong>EN:</strong><br>
+      For no apparent reason, motor neurons in the spinal cord of your brain begin to disappear. The cause is unknown, there is no cure. Over time, patients can't breathe, they choke on their own saliva, and the solution to this is a tracheostomy. They cannot eat, so a peg tube is inserted into the stomach. Over time, patients become completely paralysed and can only use their eyes. This paralysis has a big difference from normal paralysis. Although patients cannot move, they can feel everything. This makes the disease even more unbearable. The worst part of the disease is not being able to communicate. They are deprived of communication, which is the most basic right of a person
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Kurulum ve Kalibrasyon:</h2>
+  <div class="content-pair">
+    <div class="box">
+      <strong>TR:</strong><br>
+      Uygulamanın düzgün çalışması için kurulum ve kalibrasyon aşamaları gerçekleştirilir. İlk olarak kurulum yapılır. Bu aşama, telefonun sabit kalması için önemlidir. Bir tripod veya stand kullanılabilir. Telefon ve gözler aynı hizada olmalıdır. 30-40 santimetre mesafe önerilir. Ortam ışığı uygun şekilde ayarlanmalıdır. Kurulum tamamlandıktan sonra kalibrasyon aşaması başlatılır. Bu aşamada, uygulamada 6 göz penceresi belirir ve bize 6 talimat verilir. Örneğin, düz bakın, sağa bakın, sola bakın... Bu aşama, uygulamanın gözleri tanıması için önemlidir. Kalibrasyondan sonra uygulama ayarları başlatılır.
+    </div>
+    <div class="box">
+      <strong>EN:</strong><br>
+      Setup and calibration phases are performed for the application to work properly. Firstly, the setup is done. This stage is important for the phone to remain stable. A tripod or a stand can be used. The phone and eyes should be in the same line. We recommend a distance of 30-40 centimetres. Ambient light must be adjusted properly. After the setup is finished, the calibration phase is started. At this stage, 6 eye windows appear in the application and we are given 6 instructions. For example, look straight, look to the right, look to the left... This stage is important for the application to recognise the eyes. After calibration, the application settings are started
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Sonuç ve Tartışma:</h2>
+  <div class="content-pair">
+    <div class="box">
+      <strong>TR:</strong><br>
+      Elde ettiğimiz bulgular, uygulamamızın amacına uygun şekilde çalıştığını göstermektedir. İlk olarak, 50 gönüllü üzerinde test ettik ve yüzde 86 oranında başarılı sonuçlar elde ettik. Hataların kullanıcıların hatalarından kaynaklandığını fark ettik. Ya ortam ışığı çok fazla ya da çok azdı ya da kurulum ve kalibrasyon aşamalarını doğru yapmıyorlardı. Daha sonra, Türkiye ALS-MNH Derneği Başkanı, aynı zamanda ALS hastası olan ve 35 yıldır bu hastalıkla mücadele eden Alper Kaya ile iletişime geçtik. O da uygulamamızı kullandı ve Türkiye'deki yüzlerce hastaya ulaştırdı. Şimdi size yer aldığımız haber kanalları ve görüştüğümüz profesörler hakkında bilgi vermek istiyorum. Aslında popülerlik hiçbir proje için önemli değildir. Ancak bizim projemiz için önemlidir, çünkü sesimizi ne kadar çok duyurursak, o kadar çok hastaya yardım edebiliriz. Alper Kaya sayesinde iletişime geçtiğimiz Avustralya'nın Sidney kentinde görevli profesör Ali Haydar Göktoğan, bize teknik olarak yardımcı oldu ve sesimizi küresel olarak duyurmamızı sağladı.
+    </div>
+    <div class="box">
+      <strong>EN:</strong><br>
+      The findings we have obtained show that our application works in accordance with its purpose. At first, we tested it on 50 volunteers and got 86 per cent successful results. We realised that the errors were caused by the users' mistakes. Either the ambient light was too much or too little, or they were not doing the setup and calibration stages properly. Afterwards, we reached Alper Kaya, the president of the ALS-MNH Association of Turkey, who is also an ALS patient and has been fighting this disease for 35 years. He also used our application and delivered it to hundreds of patients in Turkey. Now I would like to tell you about the news channels we have been on and the professors we have spoken to. In fact, popularity is not important for any project. But it is important for our project because the more we make our voice heard, the more patients we will help. Ali Haydar Göktoğan, a professor in Sydney, Australia, whom we contacted thanks to Alper Kaya, helped us technically and helped us to make our voice heard globally.
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 ALS Communication App | ISEF Presentation
+</footer>
+
+</body>
+</html>
+<script>
+  const images = document.querySelectorAll('.section-image');
+  images.forEach(img => {
+    img.style.display = 'none';
+  });
+
+  const checkbox = document.getElementById('toggleImages');
+  checkbox.addEventListener('change', function () {
+    const images = document.querySelectorAll('.section-image');
+    images.forEach(img => {
+      img.style.display = this.checked ? 'block' : 'none';
+    });
+  });
+</script>
