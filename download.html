@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>App Download — Example</title>
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#94a3b8; --accent:#06b6d4; --glass: rgba(255,255,255,0.03);
+      --radius:12px; --max-width:980px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:'Segoe UI',sans-serif; margin:0; padding:0; background:var(--bg); color:white;}
+
+    /* Header */
+    header.site-header{background:#2c3e50; color:white; padding:30px 20px 10px; text-align:center; width:100%; position:sticky; top:0;}
+    header.site-header h1{font-size:20px; font-weight:600; margin:0;}
+
+    /* Container */
+    .container{width:100%; max-width:var(--max-width); margin:0 auto; display:flex; justify-content:center; align-items:center; flex-direction:column; min-height:calc(100vh - 80px);}
+
+    /* Card */
+    .card{background:var(--card); border-radius:var(--radius); padding:18px; box-shadow:0 6px 20px rgba(0,0,0,0.6); display:grid; grid-template-columns:96px 1fr 220px; gap:14px; align-items:center;}
+    .logo{width:96px; height:96px; border-radius:14px; display:flex; align-items:center; justify-content:center; background:var(--glass); overflow:hidden;}
+    .logo img{max-width:84px; max-height:84px; display:block}
+    .meta{min-width:0}
+    .appname{font-size:18px; font-weight:700; margin:0 0 6px 0}
+    .tagline{margin:0 0 8px 0; color:var(--muted); font-size:13px}
+    .meta-grid{display:flex; gap:12px; flex-wrap:wrap; font-size:13px; color:var(--muted)}
+    .meta-grid div{white-space:nowrap}
+
+    /* Right column */
+    .cta{display:flex; flex-direction:column; align-items:flex-end; gap:8px}
+    .version{font-size:13px; color:var(--muted)}
+    .download-btn{background:linear-gradient(90deg,var(--accent), #3dd4d0); color:#032027; border:none; padding:12px 16px; border-radius:10px; font-weight:700; cursor:pointer; box-shadow:0 6px 18px rgba(6,182,212,0.14);}
+    .download-btn[disabled]{opacity:0.5; cursor:not-allowed}
+    .small{font-size:12px; color:var(--muted)}
+
+    .description{margin-top:12px; font-size:14px}
+    .row{display:flex; gap:10px; align-items:center; margin-top:12px; font-size:13px}
+
+    @media (max-width:780px){
+      .card{grid-template-columns:72px 1fr; grid-template-rows:auto auto;}
+      .cta{grid-column:1/-1; align-items:stretch; flex-direction:row; justify-content:space-between}
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Multilingual and Low-Cost Mobile Eye Movement Communication System for Patients with Amyotrophic Lateral Sclerosis (ALS)</h1>
+  </header>
+
+  <main class="container">
+    <article class="card" role="region" aria-label="App download card">
+      <div class="logo">
+        <img alt="App logo" src='data:image/svg+xml;utf8, %3Csvg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120"%3E%3Cdefs%3E%3ClinearGradient id="g" x1="0" x2="1" y1="0" y2="1"%3E%3Cstop stop-color="%2306b6d4" offset="0"/%3E%3Cstop stop-color="%233dd4d0" offset="1"/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width="120" height="120" rx="18" fill="url(%23g)"/%3E%3Ctext x="50%" y="54%" font-size="48" text-anchor="middle" fill="white" font-family="Verdana,Arial" dy="16">A%3C/text%3E%3C/svg%3E' />
+      </div>
+
+      <div class="meta">
+        <h3 class="appname" id="app-name">ExampleApp</h3>
+        <p class="tagline" id="app-tag">A short description that explains the app in one sentence.</p>
+
+        <div class="meta-grid">
+          <div><strong>Author:</strong>&nbsp;<span id="app-author">Acme Corp</span></div>
+          <div><strong>Version:</strong>&nbsp;<span id="app-version">1.2.3</span></div>
+          <div><strong>Last update:</strong>&nbsp;<span id="app-updated">2025-08-01</span></div>
+        </div>
+
+        <p class="description" id="app-desc">Detailed description goes here. Keep it concise — this space shows the most important features and notes so users can decide before they download.</p>
+
+        <div class="row">
+          <div class="small">File size: <span id="file-size">25 MB</span></div>
+          <div class="small">Platform: <span id="platform">Windows / macOS</span></div>
+        </div>
+      </div>
+
+      <div class="cta">
+        <div style="text-align:right">
+          <div class="version">Stable • <span id="release-type">Public</span></div>
+          <div class="version">Signed: <span id="signed">Yes</span></div>
+        </div>
+        <button class="download-btn" id="downloadBtn" data-download-url="/downloads/exampleapp-1.2.3.zip">Download</button>
+      </div>
+    </article>
+  </main>
+
+  <script>
+    const btn = document.getElementById('downloadBtn');
+    btn.addEventListener('click', function(){
+      const url = btn.getAttribute('data-download-url');
+      if(!url){ alert('Download URL not set.'); return; }
+      btn.disabled = true; btn.textContent = 'Preparing...';
+      setTimeout(()=>{window.location.href = url;}, 700);
+    });
+  </script>
+</body>
+</html>
