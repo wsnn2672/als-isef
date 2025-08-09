@@ -12,12 +12,63 @@
       background: #f4f6f8;
       color: #333;
     }
+
     header {
       background: #2c3e50;
       color: white;
-      padding: 20px;
+      padding: 30px 20px 10px;
       text-align: center;
+      position: relative;
     }
+
+    .profile-buttons {
+      margin-top: 0px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .profile-buttons a {
+      background: #2c3e50;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 0px;
+      font-weight: 600;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .profile-buttons a:hover {
+      background: #364a5f;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    }
+    #eren {
+      border-radius: 0px 0px 0px 10px;
+    }
+
+    #eyup {
+      border-radius: 0px 0px 0px 0px;
+    }
+
+    #sinan {
+      border-radius: 0px 0px 10px 0px;
+    }
+
+    @media (max-width: 600px) {
+      .profile-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .profile-buttons a {
+        width: 80%;
+        text-align: center;
+      }
+    }
+
+
     section {
       padding: 40px 20px;
       max-width: 1000px;
@@ -61,6 +112,12 @@
   <h1>Multilingual and Low-Cost Mobile Eye Movement Communication System for Patients with Amyotrophic Lateral Sclerosis (ALS)</h1>
 </header>
 
+<div class="profile-buttons">
+  <a href="eren.html" id="eren">Eren</a>
+  <a href="eyup.html" id="eyup">Eyüp</a>
+  <a href="index.html" id="sinan">Sinan</a>
+</div>
+
 <section>
   <h2>Diğer Teknolojilerden Farkımız:</h2>
   <div class="content-pair">
@@ -101,7 +158,7 @@
       The interface has six buttons: four for typing, and two for changing or completing input. Users select letters to form combinations, then press “Change” to view word suggestions. If none of them matches, AI offers alternatives. Once a word is chosen, AI builds a sentence, which can be spoken with "Complete".
     </div>
     <div class="box">
-      <strong>EN (Daha Detaylı Açıklanmış Hali) (Muhtemelen Bunu Kullanacağım):</strong><br>
+      <strong>EN (Daha Detaylı Açıklanmıış Hali):</strong><br>
       As you can see, the Text Entry Interface has six interactive buttons: four of them are keyboard keys, and the remaining two are the Change and Delete buttons. Let me give you an example to help you understand. For instance, let's try the word "car."
 To type the word "car," you first need to enter the first letter, which is 'C'. To do that, look at the top-left box that contains the letter 'C'. After that, just like with the letter 'C', you need to look at the boxes that contain the remaining letters.
 You may notice that the TextBox shows a strange combination that might not make sense at first. But if you press the Change button, the application starts guessing the word you're trying to write. Once you select the word, the AI writes a sentence in the LLM box. Then, the patient can speak the word by pressing the Complete and Speak button.
