@@ -50,7 +50,7 @@
 
     #eyup {
       border-radius: 0px 0px 0px 0px;
-      color: #d8d8d8;
+      color: #91a1dd;
     }
 
     #sinan {
@@ -69,6 +69,12 @@
       }
     }
 
+    h4 {
+      color: #2c3e50;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+      text-align: center;
+    }
 
     section {
       padding: 40px 20px;
@@ -105,6 +111,64 @@
       background: #bdc3c7;
       font-size: 14px;
     }
+    .checkbox-container {
+      text-align: center;
+      margin: 30px 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .custom-checkbox {
+      position: relative;
+      padding-left: 40px;
+      cursor: pointer;
+      font-size: 18px;
+      color: #333;
+      user-select: none;
+    }
+
+    .custom-checkbox input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 24px;
+      width: 24px;
+      background-color: #eee;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+      box-shadow: inset 0 0 0 2px #ccc;
+    }
+
+    .custom-checkbox:hover .checkmark {
+      background-color: #ddd;
+    }
+
+    .custom-checkbox input:checked ~ .checkmark {
+      background-color: #4CAF50;
+      box-shadow: inset 0 0 0 2px #4CAF50;
+    }
+
+    .checkmark::after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 8px;
+      top: 4px;
+      width: 6px;
+      height: 12px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+
+    .custom-checkbox input:checked ~ .checkmark::after {
+      display: block;
+    }
   </style>
 </head>
 <body>
@@ -117,6 +181,16 @@
   <a href="eren.html" id="eren">Eren</a>
   <a href="eyup.html" id="eyup">Eyüp</a>
   <a href="index.html" id="sinan">Sinan</a>
+</div>
+
+<h4>Başlıklandırmalar yanlış olabilir - doğrusunu bana iletirseniz düzeltirim.</h4>
+
+<div class="checkbox-container">
+  <label class="custom-checkbox">
+    <input type="checkbox" id="toggleImages">
+    <span class="checkmark"></span>
+    Görselleri Göster/Gizle
+  </label>
 </div>
 
 <section>
@@ -134,7 +208,7 @@
 </section>
 
 <section>
-  <h2>Metin2:</h2>
+  <h2>Kurulum ve Kalibrasyon:</h2>
   <div class="content-pair">
     <div class="box">
       <strong>TR:</strong><br>
@@ -148,7 +222,7 @@
 </section>
 
 <section>
-  <h2>Metin3:</h2>
+  <h2>Sonuç ve Tartışma:</h2>
   <div class="content-pair">
     <div class="box">
       <strong>TR:</strong><br>
@@ -167,3 +241,17 @@
 
 </body>
 </html>
+<script>
+  const images = document.querySelectorAll('.section-image');
+  images.forEach(img => {
+    img.style.display = 'none';
+  });
+
+  const checkbox = document.getElementById('toggleImages');
+  checkbox.addEventListener('change', function () {
+    const images = document.querySelectorAll('.section-image');
+    images.forEach(img => {
+      img.style.display = this.checked ? 'block' : 'none';
+    });
+  });
+</script>
