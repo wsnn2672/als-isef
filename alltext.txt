@@ -1,0 +1,43 @@
+*Beginning & The Idea Behind the Project [Eren]*
+
+Hello, Esteemed jurors. We are 12th-grade students at Batman Türk Telekom Anatolian High School. My name is Eren Aygün. Before moving on to the presentation of our project, I would like to tell you about its story. Our advisor teacher lost his father to ALS. As we learned more about ALS, our hearts ached, and we felt compassion toward the patients. Therefore, we wanted to make a difference in their lives. And so, we developed a multilingual, low-cost, AI-powered communication system for ALS patients.
+
+*Amyotrophic Lateral Sclerosis [Eyüp]*
+
+For no apparent reason, motor neurons in the spinal cord of your brain begin to disappear. The cause is unknown, there is no cure. Over time, patients can't breathe, they choke on their own saliva, and the solution to this is a tracheostomy. They cannot eat, so a peg tube is inserted into the stomach. Over time, patients become completely paralysed and can only use their eyes. This paralysis has a big difference from normal paralysis. Although patients cannot move, they can feel everything. This makes the disease even more unbearable. The worst part of the disease is not being able to communicate. They are deprived of communication, which is the most basic right of a person.
+
+*The Difficulty of Lack of Communication [Eren]*
+
+Esteemed jurors, perhaps you did not notice, but I have a disability. When I was just a newborn, I was rescued from a fire, and the doctors considered it a miracle that I survived. Due to my disability, I was at times bullied. At one point in my life, I had difficulties socializing and communicating with people. Therefore, I know very well how ALS patients feel. I know very well how difficult it is to be unable to communicate.
+
+*Eye Tracking Technology [Sinan]*
+
+Our app, developed in Java, uses the OpenCV library to detect eyes and faces. After detecting the eye with OpenCV, we apply contrast enhancement to locate the pupil. Then the center of the pupil is compared with calibration data to determine the gaze direction. This gaze direction allows the patient to control the app.
+
+*What Makes Our Application Different [Sinan]*
+
+There are technologies that help ALS patients communicate using eye movements, but they’re too expensive and hard to access. Our app offers a simple and affordable way for ALS patients to communicate. E-tran board and Tobii Dynavox are examples of current solutions.
+
+*Setting up the phone [Eyüp]*
+
+Setup and calibration phases are performed for the application to work properly. Firstly, the setup is done. This stage is important for the phone to remain stable. A tripod or a stand can be used. The phone and eyes should be in the same line. We recommend a distance of 30-40 centimetres. Ambient light must be adjusted properly. After the setup is finished, the calibration phase is started.
+
+*Calibration [Eyüp]*
+
+At this stage, 6 eye windows appear in the application and we are given 6 instructions. For example, look straight, look to the right, look to the left... This stage is important for the application to recognise the eyes. After calibration, the application settings are started.
+
+*Application Settings [Eren]*
+
+After the setup and calibration phase, the settings tab is switched and the customization is set. +Precision adjustment can be done, because not all eyes are the same. +We have language options; we offer support in 4 languages including Turkish, Spanish, Chinese and English. +Various Text input modes are available so that patients can communicate in the internet and without internet. +We have 2 options as sentence generation model. We use ChatGPT 3.5 and Gemini 2.0 flash version as these artificial intelligence models are the most current and free ones.
+
+*Text Entry Tab [Sinan]*
+
+As you can see, the Text Entry Interface has six interactive buttons: four of them are keyboard keys, and the remaining two are the Change and Delete buttons. Let me give you an example to help you understand. For instance, let's try the word "car." To type the word "car," you first need to enter the first letter, which is 'C'. To do that, look at the top-left box that contains the letter 'C'. After that, just like with the letter 'C', you need to look at the boxes that contain the remaining letters. You may notice that the TextBox shows a strange combination that might not make sense at first. But if you press the Change button, the application starts guessing the word you're trying to write. Once you select the word, the AI writes a sentence in the LLM box. Then, the patient can speak the word by pressing the Complete and Speak button.
+
+*Quick Chat Tab [Sinan]*
+
+We created a Quick Chat Tab to help patients communicate faster without typing. It includes five categories like Basic Needs and Medical Needs, each filled with commonly used phrases. This allows patients to express themselves quickly and easily.
+
+*Results and Discussion [Eyüp]*
+
+The findings we have obtained show that our application works in accordance with its purpose. At first, we tested it on 50 volunteers and got 86 per cent successful results. We realised that the errors were caused by the users' mistakes. Either the ambient light was too much or too little, or they were not doing the setup and calibration stages properly. Afterwards, we reached Alper Kaya, the president of the ALS-MNH Association of Turkey, who is also an ALS patient and has been fighting this disease for 35 years. He also used our application and delivered it to hundreds of patients in Turkey. Now I would like to tell you about the news channels we have been on and the professors we have spoken to. In fact, popularity is not important for any project. But it is important for our project because the more we make our voice heard, the more patients we will help. Ali Haydar Göktoğan, a professor in Sydney, Australia, whom we contacted thanks to Alper Kaya, helped us technically and helped us to make our voice heard globally.
