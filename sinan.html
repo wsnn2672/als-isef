@@ -4,173 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ALS - ISEF Mülakat</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f6f8;
-      color: #333;
-    }
-
-    header {
-      background: #2c3e50;
-      color: white;
-      padding: 30px 20px 10px;
-      text-align: center;
-      position: relative;
-    }
-
-    .profile-buttons {
-      margin-top: 0px;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .profile-buttons a {
-      background: #2c3e50;
-      color: white;
-      text-decoration: none;
-      padding: 12px 24px;
-      border-radius: 0px;
-      font-weight: 600;
-      font-size: 16px;
-      transition: all 0.3s ease;
-    }
-
-    .profile-buttons a:hover {
-      background: #364a5f;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
-    }
-    #all {
-      border-radius: 0px 0px 0px 10px;
-    }
-
-    #eren {
-      border-radius: 0px 0px 0px 0px;
-    }
-
-    #sinan {
-      border-radius: 0px 0px 0px 0px;
-      color: #91a1dd;
-    }
-
-    #eyup {
-      border-radius: 0px 0px 10px 0px;
-    }
-
-    @media (max-width: 300px) {
-      .profile-buttons {
-        flex-direction: row;
-        align-items: center;
-      }
-
-      .profile-buttons a {
-        width: 80%;
-        text-align: center;
-      }
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      color: #2c3e50;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 10px;
-    }
-    .content-pair {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .box {
-      flex: 1;
-      min-width: 300px;
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    pre {
-      background: #ecf0f1;
-      padding: 15px;
-      border-radius: 6px;
-      overflow-x: auto;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #bdc3c7;
-      font-size: 14px;
-    }
-    .section-image {
-      display: none;
-    }
-
-    .checkbox-container {
-      text-align: center;
-      margin: 30px 0;
-      font-family: 'Segoe UI', sans-serif;
-    }
-
-    .custom-checkbox {
-      position: relative;
-      padding-left: 40px;
-      cursor: pointer;
-      font-size: 18px;
-      color: #333;
-      user-select: none;
-    }
-
-    .custom-checkbox input {
-      position: absolute;
-      opacity: 0;
-      cursor: pointer;
-    }
-
-    .checkmark {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 24px;
-      width: 24px;
-      background-color: #eee;
-      border-radius: 6px;
-      transition: background-color 0.3s ease;
-      box-shadow: inset 0 0 0 2px #ccc;
-    }
-
-    .custom-checkbox:hover .checkmark {
-      background-color: #ddd;
-    }
-
-    .custom-checkbox input:checked ~ .checkmark {
-      background-color: #4CAF50;
-      box-shadow: inset 0 0 0 2px #4CAF50;
-    }
-
-    .checkmark::after {
-      content: "";
-      position: absolute;
-      display: none;
-      left: 8px;
-      top: 4px;
-      width: 6px;
-      height: 12px;
-      border: solid white;
-      border-width: 0 2px 2px 0;
-      transform: rotate(45deg);
-    }
-
-    .custom-checkbox input:checked ~ .checkmark::after {
-      display: block;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -179,10 +13,10 @@
 </header>
 
 <div class="profile-buttons">
-    <a href="index.html" id="all">Hepsi</a>
-    <a href="sinan.html" id="sinan">Sinan</a>
-    <a href="eren.html" id="eren">Eren</a>
-    <a href="eyup.html" id="eyup">Eyüp</a>
+    <a href="index.html" style="border-radius: 0px 0px 0px 10px;">Hepsi</a>
+    <a href="sinan.html" style="border-radius: 0px 0px 0px 0px; color: #91a1dd;">Sinan</a>
+    <a href="eren.html" style="border-radius: 0px 0px 0px 0px;">Eren</a>
+    <a href="eyup.html" style="border-radius: 0px 0px 10px 0px;">Eyüp</a>
 </div>
 
 <div class="checkbox-container">
@@ -190,6 +24,14 @@
     <input type="checkbox" id="toggleImages">
     <span class="checkmark"></span>
     Show/Hide Presentation Pictures
+  </label>
+</div>
+
+<div class="checkbox-container">
+  <label class="custom-checkbox">
+    <input type="checkbox" id="toggleTurkish">
+    <span class="checkmark"></span>
+    Show/Hide Turkish Translations
   </label>
 </div>
 
