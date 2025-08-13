@@ -1,8 +1,3 @@
-const images = document.querySelectorAll('.section-image');
-images.forEach(img => {
-    img.style.display = 'none';
-});
-
 const checkbox = document.getElementById('toggleImages');
 checkbox.addEventListener('change', function () {
     const images = document.querySelectorAll('.section-image');
@@ -22,3 +17,29 @@ checkbox2.addEventListener('change', function () {
 window.secret = function() {
     window.location.href = "gizli/index.html";
 }
+
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-link");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+    if (pageYOffset >= sectionTop - sectionHeight / 3) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === "#" + current) {
+      link.classList.add("active");
+    }
+  });
+});
+
+const headerHeight = document.querySelector("header").offsetHeight;
+document.querySelector("#sidebar").style.top = headerHeight + "px";
+document.querySelector("#sidebar").style.height = `calc(100vh - ${headerHeight}px)`;

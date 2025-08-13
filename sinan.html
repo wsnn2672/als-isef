@@ -12,16 +12,19 @@
   <h1>Multilingual and Low-Cost Mobile Eye Movement Communication System for Patients with Amyotrophic Lateral Sclerosis (ALS)</h1>
 </header>
 
+<!-- Page Navbar -->
 <div class="profile-buttons">
     <a href="index.html" style="border-radius: 0px 0px 0px 10px;">Hepsi</a>
     <a href="sinan.html" style="border-radius: 0px 0px 0px 0px; color: #91a1dd;">Sinan</a>
     <a href="eren.html" style="border-radius: 0px 0px 0px 0px;">Eren</a>
     <a href="eyup.html" style="border-radius: 0px 0px 10px 0px;">Eyüp</a>
 </div>
+<!-- Page Navbar -->
 
+<!-- Checkboxes -->
 <div class="checkbox-container">
   <label class="custom-checkbox">
-    <input type="checkbox" id="toggleImages">
+    <input type="checkbox" id="toggleImages" checked>
     <span class="checkmark"></span>
     Show/Hide Presentation Pictures
   </label>
@@ -29,16 +32,30 @@
 
 <div class="checkbox-container">
   <label class="custom-checkbox">
-    <input type="checkbox" id="toggleTurkish">
+    <input type="checkbox" id="toggleTurkish" checked>
     <span class="checkmark"></span>
     Show/Hide Turkish Translations
   </label>
 </div>
+<!-- Checkboxes -->
 
-<section>
+<!-- Sidebar -->
+<nav id="sidebar">
+  <ul>
+    <li><a href="#section1" class="nav-link">Eye Tracking Technology</a></li>
+    <li><a href="#section2" class="nav-link">What Makes Our Application Different</a></li>
+    <li><a href="#section3" class="nav-link">Text Entry Tab</a></li>
+    <li><a href="#section4" class="nav-link">Quick Chat Tab</a></li>
+    <li><a href="#section5" class="nav-link">Suggestions</a></li>
+  </ul>
+</nav>
+<!-- Sidebar -->
+
+<!-- Texts -->
+<section id="section1">
   <h2>Eye Tracking Technology</h2>
   <div class="content-pair">
-    <div class="box">
+    <div class="box turkish-text">
       <strong>TR:</strong><br>
       Java diliyle geliştirdiğimiz uygulamamız, OpenCV kütüphanesi ile göz ve yüz tanıma işlemlerini gerçekleştirmektedir. Gözü OpenCV ile algıladıktan sonra kontrast artırımıyla göz bebeği tespit edilir; göz bebeğinin merkezi, kalibrasyon verileriyle karşılaştırılarak bakış yönü belirlenir. Bakış yönüyle ise hastanın uygulamayı kontrol etmesi sağlanmaktadır.
     </div>
@@ -50,10 +67,10 @@
   <img src="images/index/gorsel1.png" alt="Eye tracking" style="width:100%; max-width:600px; display:block; margin:20px auto; border-radius:8px;" class="section-image">
 </section>
 
-<section>
+<section id="section2">
   <h2>What Makes Our Application Different</h2>
   <div class="content-pair">
-    <div class="box">
+    <div class="box turkish-text">
       <strong>TR:</strong><br>
       ALS hastalarının göz hareketleriyle iletişim kurmalarını sağlayan teknolojiler mevcut olsa da, yüksek maliyetleri nedeniyle erişilebilirlikleri oldukça sınırlıdır. Geliştirdiğimiz uygulamayla ise bu engeli aşarak, ALS hastalarına düşük maliyetli ve erişilebilir bir iletişim imkânı sunuyoruz. Tobii Dynavox ve E-tran board, mevcut çözümlere örnek olarak gösterilebilir.
     </div>
@@ -65,10 +82,10 @@
   <img src="images/index/gorsel2.png" alt="Whats Different" style="width:100%; max-width:600px; display:block; margin:20px auto; border-radius:8px;" class="section-image">
 </section>
 
-<section>
+<section id="section3">
   <h2>Text Entry Tab</h2>
   <div class="content-pair">
-    <div class="box">
+    <div class="box turkish-text">
       <strong>TR:</strong><br>
       Gördüğünüz gibi, Metin Giriş Arayüzü altı etkileşimli düğmeye sahiptir: bunlardan dördü klavye tuşlarıdır ve kalan ikisi ise Değiştir ve Sil düğmeleridir. Anlamanıza yardımcı olmak için bir örnek vereyim. Örneğin, “araba” kelimesini deneyelim.
 “Araba” kelimesini yazmak için önce ilk harfi, yani “A”yı girmeniz gerekir. Bunu yapmak için, sol üst köşedeki ‘A’ harfini içeren kutuya bakın. Ardından, “A” harfi için yaptığınız gibi, kalan harfleri içeren kutulara bakmanız gerekir.
@@ -84,10 +101,10 @@ You may notice that the TextBox shows a strange combination that might not make 
   <img src="images/index/gorsel3.png" alt="Text Entry" style="width:100%; max-width:600px; display:block; margin:20px auto; border-radius:8px;" class="section-image">
 </section>
 
-<section>
+<section id="section4">
   <h2>Quick Chat Tab</h2>
   <div class="content-pair">
-    <div class="box">
+    <div class="box turkish-text">
       <strong>TR:</strong><br>
       Hastaların yazmadan daha hızlı iletişim kurmalarına yardımcı olmak için Hızlı Sohbet Sekmesi oluşturduk. Bu sekme, Temel İhtiyaçlar ve Tıbbi İhtiyaçlar gibi beş kategoriyi içerir ve her biri sık kullanılan ifadelerle doludur. Bu sayede hastalar kendilerini hızlı ve kolay bir şekilde ifade edebilirler.
     </div>
@@ -99,16 +116,18 @@ You may notice that the TextBox shows a strange combination that might not make 
   <img src="images/index/gorsel4.png" alt="Quick Chat" style="width:100%; max-width:600px; display:block; margin:20px auto; border-radius:8px;" class="section-image">
 </section>
 
-<section>
+<section id="section5">
   <h2>Suggestions</h2>
   <div class="content-pair">
-    <div class="box">
+    <div class="box turkish-text">
       <strong>TR:</strong><br>
       Metin hazır, herkesin kendi bölümü belirlenince burayı güncelleyeceğim.
     </div>
   </div>
   <img src="images/index/gorsel5.png" alt="Suggestions" style="width:100%; max-width:600px; display:block; margin:20px auto; border-radius:8px;" class="section-image">
 </section>
+
+<div style="height: 100px;"></div>
 
 <footer>
   © 2025 ALS 
