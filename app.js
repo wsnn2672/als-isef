@@ -43,3 +43,10 @@ window.addEventListener("scroll", () => {
 const headerHeight = document.querySelector("header").offsetHeight;
 document.querySelector("#sidebar").style.top = headerHeight + "px";
 document.querySelector("#sidebar").style.height = `calc(100vh - ${headerHeight}px)`;
+
+const toggleBtn = document.getElementById("sidebarToggle");
+const sidebar = document.getElementById("sidebar");
+
+toggleBtn.addEventListener("click", () => {
+  sidebar.classList.toggle("open");
+});
