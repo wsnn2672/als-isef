@@ -168,16 +168,19 @@ footer {
 
 #sidebar {
   position: fixed;
-  top: 100px;
   left: 0;
   width: 220px;
-  height: calc(100vh - 100px);
+  height: calc(100vh - var(--dynamic-top, 0px));
   background: #2c3e50;
   color: white;
   padding: 20px;
   overflow-y: auto;
-  transition: transform 0.3s ease;
+  transition: top 0.3s ease;
   z-index: 1000;
+}
+
+#sidebar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
 }
 
 #sidebar ul {
@@ -200,7 +203,7 @@ footer {
   background-color: #1abc9c;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 main {
