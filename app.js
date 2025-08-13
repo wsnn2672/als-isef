@@ -12,7 +12,7 @@ checkbox.addEventListener('change', function () {
 });
 
 const checkbox2 = document.getElementById('toggleTurkish');
-checkbox.addEventListener('change', function () {
+checkbox2.addEventListener('change', function () {
     const trTexts = document.querySelectorAll('.turkish-text');
     trTexts.forEach(txt => {
         txt.style.display = this.checked ? 'block' : 'none';

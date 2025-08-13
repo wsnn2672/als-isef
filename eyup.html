@@ -111,24 +111,6 @@
   <a href="download.html"> Communication App </a>
   | ISEF Presentation
 </footer>
-
+<script src="app.js"></script>
 </body>
 </html>
-<script>
-  const images = document.querySelectorAll('.section-image');
-  images.forEach(img => {
-    img.style.display = 'none';
-  });
-
-  const checkbox = document.getElementById('toggleImages');
-  checkbox.addEventListener('change', function () {
-    const images = document.querySelectorAll('.section-image');
-    images.forEach(img => {
-      img.style.display = this.checked ? 'block' : 'none';
-    });
-  });
-
-  window.secret = function() {
-    window.location.href = "gizli/index.html";
-  }
-</script>
