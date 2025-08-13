@@ -175,7 +175,7 @@ footer {
   color: white;
   padding: 20px;
   overflow-y: auto;
-  transition: top 0.3s ease;
+  transition: top 0.2s ease;
   z-index: 1000;
 }
 
@@ -203,7 +203,6 @@ footer {
   background-color: #1abc9c;
   color: white;
   font-weight: bold;
-  font-size: 16px;
 }
 
 main {

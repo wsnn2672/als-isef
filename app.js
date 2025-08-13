@@ -44,7 +44,7 @@ const sideBar = document.getElementById("sidebar");
 const header = document.querySelector("header");
 const headerHeight = header.offsetHeight;
 window.addEventListener("scroll", () => {
-  if (window.scrollY >= headerHeight) {
+  if (window.scrollY >= headerHeight / 2) {
     sideBar.style.top = "0px";
   } else {
     sideBar.style.top = headerHeight + "px";
