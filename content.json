@@ -1,0 +1,252 @@
+[
+  {
+    "id": "section1",
+    "title": "Beginning [Eren]",
+    "owner": "eren",
+    "texts": {
+      "TR": [
+        "Metin yok!"
+      ],
+      "EN": [
+        "There is no text!"
+      ]
+    },
+    "images": [
+      "images/gorsel1.png"
+    ]
+  },
+  {
+    "id": "section2",
+    "title": "The Idea Behind the Project [Eren]",
+    "owner": "eren",
+    "texts": {
+      "TR": [
+        "Sayın jüri üyeleri, biz Batman Türk Telekom Anadolu Lisesi 12. sınıf öğrencileriyiz. Ben Eren Aygün. Projemizin sunumuna geçmeden önce, projemizin hikâyesini anlatmak istiyorum. Danışman öğretmenimizin babası ALS hastalığından vefat etti. Ancak bize bunu anlattığında hiçbir şey anlamadık. Dünya çapında her 10.000 kişiden birinde görülen tüm hastalıklar nadir hastalıklar kategorisine girer, ancak ALS daha da nadirdir — her 100.000 kişiden birinde görülür. ALS hakkında daha fazla bilgi edindikçe, bunun bizim bildiğimiz en kötü hastalık olduğunu fark ettik."
+      ],
+      "EN": [
+        "Hello, Esteemed jurors. We are 12th-grade students at Batman Türk Telekom Anatolian High School. I am Eren Aygün. Before moving on to the presentation of our project, I would like to tell you about its story. Our advisor teacher lost his father to ALS. But we didn't understand anything when he told us about that. All the diseases that occur in one out of every 10,000 people worldwide fall under the category of orphan diseases, but ALS is even rarer — it occurs in one out of every 100,000 people. As we learned more about ALS, we realized that it was the worst disease known to us."
+      ]
+    },
+    "images": [
+      "images/gorsel2.png"
+    ]
+  },
+  {
+    "id": "section3",
+    "title": "Amyotrophic Lateral Sclerosis [Eyüp]",
+    "owner": "eyup",
+    "texts": {
+      "TR": [
+        "Şimdi size bu hastalık hakkında bilgi vereceğim. Saygıdeğer jüri üyeleri, bunu şu şekilde düşünün: Belirgin bir neden olmaksızın, beyninizdeki ve omuriliğinizdeki motor nöronlar yok olmaya başlar. Nedeni bilinmemektedir, tedavisi yoktur ve teşhis edilmesi çok zor bir hastalıktır. Zamanla nefes alamaz hale gelirsiniz, kendi tükürüğünüzde boğulursunuz ve bunun çözümü trakeostomidir. Yemek yiyemezsiniz, bu nedenle mideye bir peg tüpü takılır. Zamanla tamamen felç olursunuz ve sadece gözlerinizi kullanabilirsiniz. Bu felç, normal felçten büyük bir farkı vardır. Hareket edemeseniz de her şeyi hissedebilirsiniz. Bu da hastalığı daha da dayanılmaz hale getirir. Hastalığın en kötü yanı, iletişim kuramamaktır. Bir insanın en temel yaşam hakkı olan iletişimden mahrum kalırsınız. Hastaların yaşadığı bu şeyleri düşünürseniz, onların psikolojik sorunları da olduğunu anlayabilirsiniz."
+      ],
+      "EN": [
+        "Now I'll tell you about the disease. Think of it this way my esteemed jurors. For no apparent reason, motor neurons in your brain and spinal cord begin to disappear. The cause is unknown, there is no cure and a very difficult disease to diagnose. Over time, you can't breathe, you drown in your own saliva, and the solution to this is a tracheostomy. You cant eat, so a peg tube is inserted into the stomach. Over time, you become completely paralysed and can only use your eyes. This paralysis has a big difference from normal paralysis. You can feel everything even though you cant move  This makes the disease even more unbearable. The worst part of the disease is not being able to communicate. You are deprived of communication which is the most basic right to life of a person. If you think about these things that patients experience, you can understand that they also have psychological problems."
+      ]
+    },
+    "images": [
+      "images/gorsel3.png"
+    ]
+  },
+  {
+    "id": "section4",
+    "title": "The Difficulty of Lack of Communication [Eren]",
+    "owner": "eren",
+    "texts": {
+      "TR": [
+        "Sayın jüri üyeleri, belki fark etmemişsinizdir, ama ben bir engelliyim. Henüz yeni doğmuşken bir yangından kurtarıldım ve doktorlar hayatta kalmamı bir mucize olarak değerlendirdiler. Engelliliğim nedeniyle zaman zaman zorbalığa maruz kaldım. Hayatımın bir döneminde insanlarla iletişim kurmakta ve sosyalleşmekte zorluklar yaşadım. Bu nedenle, iletişim kuramamanın ne kadar zor olduğunu çok iyi biliyorum. ALS hastalarının nasıl hissettiklerini çok iyi biliyorum. Bu nedenle, onların hayatlarında bir fark yaratmak istedik. Ve böylece, ALS hastaları için çok dilli, düşük maliyetli, yapay zeka destekli bir iletişim sistemi geliştirdik."
+      ],
+      "EN": [
+        "Esteemed jurors, perhaps you did not notice, but I have a disability. When I was just a newborn, I was rescued from a fire, and the doctors considered it a miracle that I survived. Due to my disability, I was at times bullied. At one point in my life, I had difficulties socializing and communicating with people. Therefore, I know very well how difficult it is to be unable to communicate. I know very well how ALS patients feel. This is why we wanted to make a difference in their lives. And so, we developed a multilingual, low-cost, AI-powered communication system for ALS patients."
+      ]
+    },
+    "images": [
+      "images/gorsel3.png"
+    ]
+  },
+  {
+    "id": "section5",
+    "title": "Eye Tracking Technology [Sinan]",
+    "owner": "sinan",
+    "texts": {
+      "TR": [
+        "Uygulamamızı Java ile geliştirdik ve gözleri ve yüzleri algılamak için OpenCV kütüphanesini kullandık. OpenCV ile gözü algıladıktan sonra, göz bebeğini bulmak için siyah kontrast iyileştirme uyguluyoruz. Ardından göz bebeğinin merkezi, bakış yönünü belirlemek için kalibrasyon verileriyle karşılaştırılıyor. Bu bakış yönü, hastanın uygulamada metin yazabilmesini sağlıyor."
+      ],
+      "EN": [
+        "We developed our application with Java and used the OpenCV library to detect eyes and faces. After detecting the eye with OpenCV, we apply black contrast enhancement to find the pupil. Then the center of the pupil is compared with calibration data to determine(ditırmin) the direction of gaze. This gaze direction allows the patient to type text in the application."
+      ]
+    },
+    "images": [
+      "images/gorsel4.png"
+    ]
+  },
+  {
+    "id": "section6",
+    "title": "What Makes Our Application Different [Sinan]",
+    "owner": "sinan",
+    "texts": {
+      "TR": [
+        "ALS hastalarının gözlerini kullanarak iletişim kurmalarını sağlayan teknolojiler halihazırda mevcuttur. Ancak, bu çözümlerin yüksek maliyeti, hastaların bunlara erişmesini çok zorlaştırmaktadır. Uygulamamız, hastaların herhangi bir ek cihaza ihtiyaç duymadan, sadece cep telefonlarını kullanarak iletişim kurmalarını sağlayan basit ve uygun fiyatlı bir seçenek sunmaktadır. Ekranda, ALS hastalarının iletişim kurmasına yardımcı olan mevcut çözümlerden bazılarını görebilirsiniz."
+      ],
+      "EN": [
+        "There are already technologies that allow ALS patients to communicate using their eyes. However, the high cost of these solutions makes them very difficult for patients to access. Our application provides a simple and affordable option, enabling patients to communicate without the need for any additional devices—just by using their mobile phones. On the screen, you can see some of the existing solutions that help ALS patients communicate."
+      ]
+    },
+    "images": [
+      "images/gorsel5.png"
+    ]
+  },
+  {
+    "id": "section7",
+    "title": "Setting up the phone [Eyüp]",
+    "owner": "eyup",
+    "texts": {
+      "TR": [
+        "Uygulamanın düzgün çalışması için kurulum ve kalibrasyon aşamaları gerçekleştirilir. İlk olarak kurulum yapılır. Bu aşama, telefonun sabit kalması için önemlidir. Bir tripod veya stand kullanılabilir. Telefon ve gözler aynı hizada olmalıdır. 30-40 santimetre mesafe önerilir. Ortam ışığı uygun şekilde ayarlanmalıdır. Kurulum tamamlandıktan sonra kalibrasyon aşaması başlatılır."
+      ],
+      "EN": [
+        "Setup and calibration phases are performed for the application to work properly. Firstly, the setup is done. This stage is important for the phone to remain stable. A tripod or a stand can be used. The phone and eyes should be in the same line. We recommend a distance of 30-40 centimetres. Ambient light must be adjusted properly. After the setup is finished, the calibration phase is started."
+      ]
+    },
+    "images": [
+      "images/gorsel6.png"
+    ]
+  },
+  {
+    "id": "section8",
+    "title": "Calibration [Eyüp]",
+    "owner": "eyup",
+    "texts": {
+      "TR": [
+        "Bu aşamada, uygulamada 6 göz penceresi belirir ve bize 6 talimat verilir. Örneğin, düz bakın, sağa bakın, sola bakın... Bu aşama, uygulamanın gözleri tanıması için önemlidir."
+      ],
+      "EN": [
+        "At this stage, 6 eye windows appear in the application and we are given 6 instructions. For example, look straight, look to the right, look to the left... This stage is important for the application to recognise the eyes."
+      ]
+    },
+    "images": [
+      "images/gorsel7.png"
+    ]
+  },
+  {
+    "id": "section9",
+    "title": "Application Settings [Eren]",
+    "owner": "eren",
+    "texts": {
+      "TR": [
+        "Kurulum ve kalibrasyon aşamasından sonra, ayarlar sekmesi değiştirilir ve özelleştirme yapılır. Herkesin gözleri aynı olmadığı için hassas ayar yapılabilir. Dil seçeneklerimiz mevcuttur; Türkçe, İspanyolca, Çince ve İngilizce dahil olmak üzere 4 dilde destek sunuyoruz. Hastaların internet üzerinden ve internet olmadan iletişim kurabilmeleri için çeşitli metin giriş modları mevcuttur. Cümle oluşturma modeli olarak 2 seçeneğimiz vardır. ChatGPT 3.5 ve Gemini 2.0 flash sürümünü kullanıyoruz."
+      ],
+      "EN": [
+        "After the setup and calibration phase, the settings tab is switched and the customization is set.",
+        "+Precision adjustment can be done, because not all eyes are the same.",
+        "+We have language options; we offer support in 4 languages including Turkish, Spanish, Chinese and English.",
+        "+Various Text input modes are available so that patients can communicate on the internet and without internet.",
+        "+We have 2 options as sentence generation model. We use ChatGPT 3.5 and Gemini 2.0 flash version."
+      ]
+    },
+    "images": [
+      "images/gorsel8.png"
+    ]
+  },
+  {
+    "id": "section10",
+    "title": "Text Entry Tab [Sinan]",
+    "owner": "sinan",
+    "texts": {
+      "TR": [
+        "Gördüğünüz gibi, Metin Giriş Arayüzü altı etkileşimli düğmeye sahiptir: bunlardan dördü klavye tuşlarıdır ve kalan ikisi ise Değiştir ve Sil düğmeleridir. Bu klavye, tuşlu telefon tuş takımına benzer. Yazmayı anlamanıza yardımcı olmak için bir örnek vereyim. Örneğin, “water” kelimesini deneyelim. “Water” kelimesini yazmak için önce ilk harfi, yani “W” harfini girmeniz gerekir. Bunu yapmak için, “W” harfini içeren sağ alt kutucuğa bakın. Ardından, “W” harfinde olduğu gibi, kalan harfleri içeren kutucuklara bakmanız gerekir. - Sol üstteki ‘A’ harfi, sağ alttaki “T” harfi gibi... - TextBox'ta başlangıçta anlamlı görünmeyen bir dizi harf olduğunu fark edebilirsiniz. Ancak Switch düğmesine basarsanız, uygulama yazmaya çalıştığınız kelimeyi tahmin etmeye başlar. Gördüğünüz gibi, istediğimiz kelime burada. Kelimeyi seçtikten sonra, AI LLM kutusunda seçilen kelimeleri kullanarak mantıklı cümleler oluşturur. Ardından, hasta Finish and Speak düğmesine basarak kelimeyi söyleyebilir."
+      ],
+      "EN": [
+        "As you can see, the Text Entry Interface has six interactive buttons: four of them are keyboard keys, and the remaining two are the Switch and Delete buttons. This keyboard is similar to a push-button telephone keypad. Let me give you an example to help you understand the typing. For instance, let's try the word 'water'. To type the word 'water'; you first need to enter the first letter, which is 'W'. To do that, look at the bottom-right box that contains the letter 'W'. After that, just like with the letter 'W', you need to look at the boxes that contain the remaining letters.- Like 'A' letter on top-left, 'T' letter on bottom right….- You may notice that the TextBox shows a sequence of letters that may not initially seem meaningful. But if you press the Switch button, the application starts guessing the word you're trying to write. As you can see, the word we want is here. Once you select the word, the AI creates logical sentences using chosen words in the LLM box. Then, the patient can speak the word by pressing the Finish and Speak button."
+      ]
+    },
+    "images": [
+      "images/gorsel9.png"
+    ]
+  },
+  {
+    "id": "section11",
+    "title": "Text Entry Tab - 2 [Sinan]",
+    "owner": "sinan",
+    "texts": {
+      "TR": [
+        "Metin yok!"
+      ],
+      "EN": [
+        "There is no text!"
+      ]
+    },
+    "images": [
+      "images/gorsel10.png"
+    ]
+  },
+  {
+    "id": "section12",
+    "title": "Quick Chat Tab [Sinan]",
+    "owner": "sinan",
+    "texts": {
+      "TR": [
+        "Ayrıca hastaların yazmadan daha hızlı iletişim kurmalarına yardımcı olmak için Hızlı Sohbet Sekmesi oluşturduk. Bu sekme, Temel İhtiyaçlar ve Tıbbi İhtiyaçlar gibi beş kategoriyi içerir ve her biri sık kullanılan ifadelerle doludur. Bu sayede hastalar kendilerini hızlı ve kolay bir şekilde ifade edebilirler."
+      ],
+      "EN": [
+        "We also created a Quick Chat Tab to help patients communicate faster without typing. It includes five categories like Basic Needs and Medical Needs, each filled with commonly used phrases. This allows patients to express themselves quickly and easily."
+      ]
+    },
+    "images": [
+      "images/gorsel11.png"
+    ]
+  },
+  {
+    "id": "section13",
+    "title": "Results and Discussion [Eyüp]",
+    "owner": "eyup",
+    "texts": {
+      "TR": [
+        "Elde ettiğimiz bulgular, uygulamamızın amacına uygun şekilde çalıştığını göstermektedir. İlk olarak, 50 gönüllü üzerinde test ettik ve yüzde 86 oranında başarılı sonuçlar elde ettik. Hataların kullanıcıların hatalarından kaynaklandığını fark ettik. Ya ortam ışığı çok fazla ya da çok azdı ya da kurulum ve kalibrasyon aşamalarını doğru yapmıyorlardı. Daha sonra, Türkiye ALS-MNH Derneği Başkanı, aynı zamanda ALS hastası olan ve 35 yıldır bu hastalıkla mücadele eden Alper Kaya ile iletişime geçtik. O da uygulamamızı kullandı ve Türkiye'deki yüzlerce hastaya ulaştırdı. Şimdi size yer aldığımız haber kanalları ve görüştüğümüz profesörler hakkında bilgi vermek istiyorum. Aslında bir proje için popülerlik önemli değildir. Ancak bizim projemiz için önemlidir, çünkü sesimizi ne kadar çok duyurursak, o kadar çok hastaya yardım edebiliriz. Uluslararası Bilim ve Mühendislik Fuarı'na gidip ülkemizi çok iyi bir şekilde temsil etmek ve daha fazla hastaya sesimizi duyurmak istiyoruz. Bu arada, uygulamamızı sadece ALS hastaları değil, tüm felçli bireyler kullanabilir. ALS'yi vurguladık çünkü bizim için duygusal değeri yüksek ve farkındalık yaratmak istedik. Alper Kaya sayesinde tanıştığımız Ali Haydar Göktoğan bize teknik önerilerde bulundu."
+      ],
+      "EN": [
+        "The findings we have obtained show that our application works in accordance with its purpose. At first, we tested it on 50 volunteers and got 86 per cent successful results. We realised that the errors were caused by the users' mistakes. Either the ambient light was too much or too little, or they were not doing the setup and calibration stages properly. Afterwards, we reached Alper Kaya, the president of the ALS-MNH Association of Turkey, who is also an ALS patient and has been fighting this disease for 35 years. He also used our application and delivered it to hundreds of patients in Turkey. Now I would like to tell you about the news channels we have been on and the professors we have spoken to. In fact, popularity is not important for a project. But it is important for our project because the more we make our voice heard, the more patients we will help. We want to go to the International Science and Engineering Fair and represent our country in a very good way and make our voices heard by more patients. By the way, not only ALS patients but all paralysed individuals can use our application. We emphasised Als because it has a high sentimental value for us and we wanted to raise awareness. Ali Haydar Göktoğan, whom we met thanks to Alper Kaya, gave us technical suggestions."
+      ]
+    },
+    "images": [
+      "images/gorsel12.png"
+    ]
+  },
+  {
+    "id": "section14",
+    "title": "Suggestions [Herkes Beraber]",
+    "owner": "all",
+    "texts": {
+      "TR": [
+        "-Eren: Şimdi gelecekte eklemeyi planladığımız özelliklerden bahsedeceğim.",
+        "Ana hedefimiz, daha fazla hastanın iletişim sorunlarını aşmasına yardımcı olmaktır. Her hastanın, hangi dili konuşursa konuşsun, okuma yazma bilip bilmediğine bakılmaksızın uygulamayı kullanabilmesini istiyoruz. Bunu başarmak için, uygulamaya bir Görsel Sekme eklemeye karar verdik. Bu sekme, hastaların hiçbir şey yazmaya gerek kalmadan iletişim kurmalarını sağlayan resimler ve simgeler kullanacak. Ayrıca, zamanla daha fazla dil seçeneği eklemeyi planlıyoruz, böylece daha fazla insana ulaşabileceğiz. Aslında, Rusça ve Hintçe bir sonraki hedef dillerimizdir.",
+        "-Sinan: Hastaların acil durumlarda yardım çağırabilmeleri için acil çağrı özelliği geliştireceğiz. Makine öğrenimi ile sık kullanılan kelimeleri analiz eden ve bunları kullanıcıya öncelikli olarak sunan bir sistem kuracağız.",
+        "-Eyüp: Şu anda Flutter ile uygulamanın çapraz platformlu hale getirilmesi üzerinde çalışıyoruz. Bu geçiş tamamlandığında, yeni özellikler eklemeye devam edeceğiz."
+      ],
+      "EN": [
+        "-Eren: Now I'll talk about the features we plan to add in the future.",
+        "Our main goal is to help more patients overcome communication problems. We want every patient to be able to use the app—no matter what language they speak or whether they can read or write. To achieve this, we’ve decided to add a Visual Tab to the app. This tab will use images and icons, allowing patients to communicate without needing to type anything. We also plan to add more language options over time so we can reach even more people. In fact, Russian and Hindi are our next target languages.",
+        "-Sinan: We will develop an emergency call feature so that patients can call for help in case of an emergency. We will build a system that analyzes commonly used words with machine learning and presents them to the user as a priority.",
+        "-Eyüp: We are currently working on making the app cross-platform with Flutter. Once this transition is complete, we will continue to add new features."
+      ]
+    },
+    "images": [
+      "images/gorsel13.png"
+    ]
+  },
+  {
+    "id": "section15",
+    "title": "End of Presentation [Eren]",
+    "owner": "eren",
+    "texts": {
+      "TR": [
+        "Metin yok!"
+      ],
+      "EN": [
+        "There is no text!"
+      ]
+    },
+    "images": [
+      "images/gorsel14.png"
+    ]
+  }
+]
