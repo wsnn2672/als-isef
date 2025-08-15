@@ -16,43 +16,40 @@ checkbox2.addEventListener('change', function () {
 });
 // Checkboxs
 
-console.log("Merhaba JavaScript1");
-
-// Commands On Console
-window.secret = function() {
-    window.location.href = "gizli/index.html";
-}
-// Commands On Console
-
+// Profile Filter
 function setupProfileFilter() {
   const buttons = document.querySelectorAll(".profile-buttons a");
   const sections = document.querySelectorAll(".profile-section");
+  const sidebarLinks = document.querySelectorAll(".nav-link");
 
   buttons.forEach(button => {
     button.addEventListener("click", e => {
       e.preventDefault();
       const target = button.dataset.target;
 
-      // 🔄 Aktif sınıfı güncelle
+      // 🔄 Aktif buton
       buttons.forEach(btn => btn.classList.remove("active"));
       button.classList.add("active");
 
       // 🔍 Section filtreleme
       sections.forEach(section => {
-        if (target === "all") {
-          section.style.display = "block";
-        } else {
-          section.style.display = section.dataset.owner === target ? "block" : "none";
-        }
+        section.style.display = target === "all" || section.dataset.owner === target ? "block" : "none";
+      });
+
+      // 📌 Sidebar filtreleme
+      sidebarLinks.forEach(link => {
+        link.style.display = target === "all" || link.dataset.owner === target ? "block" : "none";
       });
     });
   });
 
-  // 🟢 Varsayılan olarak ilk butona tıklat (örneğin "all")
+  // 🟢 Varsayılan olarak "all" butonunu tetikle
   const defaultButton = document.querySelector('.profile-buttons a[data-target="all"]');
   if (defaultButton) defaultButton.click();
 }
+// Profile Filter
 
+// Content to Section
 const sidebarList = document.getElementById("sidebarList");
 const mainContent = document.getElementById("mainContent");
 
@@ -70,6 +67,7 @@ fetch("content.json")
       link.textContent = section.title;
       link.href = `#${section.id}`;
       link.classList.add("nav-link");
+      link.dataset.owner = section.owner;
       sidebarList.appendChild(menuClone);
 
       // Section content
@@ -113,4 +111,6 @@ fetch("content.json")
 
     setupScrollTracking();
     setupProfileFilter();
-  });
+  }
+);
+// Content to Section
