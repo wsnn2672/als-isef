@@ -225,7 +225,7 @@
       "EN": [
         "-Eren: Now I'll talk about the features we plan to add in the future.",
         "Our main goal is to help more patients overcome communication problems. We want every patient to be able to use the app—no matter what language they speak or whether they can read or write. To achieve this, we’ve decided to add a Visual Tab to the app. This tab will use images and icons, allowing patients to communicate without needing to type anything. We also plan to add more language options over time so we can reach even more people. In fact, Russian and Hindi are our next target languages.",
-        "-Sinan: We will develop an emergency call feature so that patients can call for help in case of an emergency. We will build a system that analyzes commonly used words with machine learning and presents them to the user as a priority.",
+        "-Sinan: We will develop an emergency call feature so that patients can call for help in case of an emergency. We will build a system that analyzes commonly used words with machine learning and presents them to the user as a priority (prayoritii).",
         "-Eyüp: Finally, we’re currently working on making the app cross-platform using Flutter. Once this transition is complete, we’ll be able to support more devices and continue adding new features that improve accessibility and user experience."
       ]
     },
