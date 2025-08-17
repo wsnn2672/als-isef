@@ -24,7 +24,7 @@
         "Sayın jüri üyeleri, biz Batman Türk Telekom Anadolu Lisesi 12. sınıf öğrencileriyiz. Ben Eren Aygün. Projemizin sunumuna geçmeden önce, projemizin hikâyesini anlatmak istiyorum. Danışman öğretmenimizin babası ALS hastalığından vefat etti. Ancak bize bunu anlattığında hiçbir şey anlamadık. Dünya çapında her 10.000 kişiden birinde görülen tüm hastalıklar nadir hastalıklar kategorisine girer, ancak ALS daha da nadirdir — her 100.000 kişiden birinde görülür. ALS hakkında daha fazla bilgi edindikçe, bunun bizim bildiğimiz en kötü hastalık olduğunu fark ettik."
       ],
       "EN": [
-        "Hello, Esteemed jurors. We are 12th-grade students at Batman Türk Telekom Anatolian High School. I am Eren Aygün. Before moving on to the presentation of our project, I would like to tell you about its story. Our advisor teacher lost his father to ALS. But we didn't understand anything when he told us about that. All the diseases that occur in one out of every 10,000 people worldwide fall under the category of orphan diseases, but ALS is even rarer — it occurs in one out of every 100,000 people. As we learned more about ALS, we realized that it was the worst disease known to us."
+        "Hello, Esteemed jurors. We are 12th-grade students at Batman Türk Telekom Anatolian High School. I am Eren Aygün. Before moving on to the presentation of our project, I would like to tell you about its story. Our advisor teacher lost his father to ALS. At first, we didn’t fully understand what that meant. All the diseases that occur in one out of every 10,000 people worldwide fall under the category of orphan diseases, but ALS is even rarer — it occurs in one out of every 100,000 people. As we learned more about ALS, we realized that it was the worst disease known to us."
       ]
     },
     "images": [
@@ -56,7 +56,7 @@
         "Sayın jüri üyeleri, belki fark etmemişsinizdir, ama ben bir engelliyim. Henüz yeni doğmuşken bir yangından kurtarıldım ve doktorlar hayatta kalmamı bir mucize olarak değerlendirdiler. Engelliliğim nedeniyle zaman zaman zorbalığa maruz kaldım. Hayatımın bir döneminde insanlarla iletişim kurmakta ve sosyalleşmekte zorluklar yaşadım. Bu nedenle, iletişim kuramamanın ne kadar zor olduğunu çok iyi biliyorum. ALS hastalarının nasıl hissettiklerini çok iyi biliyorum. Bu nedenle, onların hayatlarında bir fark yaratmak istedik. Ve böylece, ALS hastaları için çok dilli, düşük maliyetli, yapay zeka destekli bir iletişim sistemi geliştirdik."
       ],
       "EN": [
-        "Esteemed jurors, perhaps you did not notice, but I have a disability. When I was just a newborn, I was rescued from a fire, and the doctors considered it a miracle that I survived. Due to my disability, I was at times bullied. At one point in my life, I had difficulties socializing and communicating with people. Therefore, I know very well how difficult it is to be unable to communicate. I know very well how ALS patients feel. This is why we wanted to make a difference in their lives. And so, we developed a multilingual, low-cost, AI-powered communication system for ALS patients."
+        "Dear jurors, perhaps you did not notice, but I have a disability. When I was just a newborn, I was rescued from a fire, and the doctors considered it a miracle that I survived. Due to my disability, I was at times bullied. At one point in my life, I had difficulties socializing and communicating with people. Therefore, I know very well how difficult it’s to be unable to communicate. I know very well how ALS patients feel. This is why we wanted to make a difference in their lives. And so, we developed a multilingual, low-cost, AI-powered communication system for ALS patients."
       ]
     },
     "images": [
@@ -223,8 +223,8 @@
         "-Eyüp: Şu anda Flutter ile uygulamanın çapraz platformlu hale getirilmesi üzerinde çalışıyoruz. Bu geçiş tamamlandığında, yeni özellikler eklemeye devam edeceğiz."
       ],
       "EN": [
-        "-Eren: Now I'll talk about the features we plan to add in the future.",
-        "Our main goal is to help more patients overcome communication problems. We want every patient to be able to use the app—no matter what language they speak or whether they can read or write. To achieve this, we’ve decided to add a Visual Tab to the app. This tab will use images and icons, allowing patients to communicate without needing to type anything. We also plan to add more language options over time so we can reach even more people. In fact, Russian and Hindi are our next target languages.",
+        "-Eren: Now we will talk about the features we plan to add in the future.",
+        "Our main goal is to help more patients overcome communication problems. We want every patient to be able to use the app—no matter what language they speak or whether they can read or write. To achieve this, we have decided to add a Visual Tab to the app. This tab will use images and icons, allowing patients to communicate without needing to type anything. We also plan to add more language options over time so we can reach even more people. In fact, Russian and Hindi are next on our list.",
         "-Sinan: We will develop an emergency call feature so that patients can call for help in case of an emergency. We will build a system that analyzes commonly used words with machine learning and presents them to the user as a priority (prayoritii).",
         "-Eyüp: Finally, we’re currently working on making the app cross-platform using Flutter. Once this transition is complete, we’ll be able to support more devices and continue adding new features that improve accessibility and user experience."
       ]
@@ -239,10 +239,12 @@
     "owner": "eren",
     "texts": {
       "TR": [
-        "ALS için bir tedavi bulunana kadar, teknoloji bizim ilacımızdır."
+        "ALS için bir tedavi bulunana kadar, teknoloji bizim ilacımız olmaya devam edecek. İlginiz için teşekkür ederiz.",
+        "Herhangi bir sorunuz varsa, memnuniyetle cevaplayacağız."
       ],
       "EN": [
-        "Until we find a cure for ALS, technology is our medicine."
+        "Until a cure for ALS is discovered, technology will remain our medicine. Thank you for your attention.",
+        "If you have any questions, we would be happy to answer them."
       ]
     },
     "images": [
